@@ -1,0 +1,7 @@
+{
+  "extends": "@reza-heydari/typescript-config/vite.json",
+  "compilerOptions": {
+    "declaration": true
+  },
+  "include": ["src", "vite.config.ts"]
+}
