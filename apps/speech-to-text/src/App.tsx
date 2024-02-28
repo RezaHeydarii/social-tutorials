@@ -1,7 +1,12 @@
-import "./App.css";
+import { Suspense } from "react";
+import { IndexPage } from "./pages";
 
 function App() {
-  return <div />;
+  return (
+    <Suspense fallback={<p>Loading</p>}>
+      <IndexPage />
+    </Suspense>
+  );
 }
 
 export default App;

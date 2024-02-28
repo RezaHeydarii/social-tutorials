@@ -2,8 +2,8 @@
   "name": "instagram-tutorials",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
+    "dev:speech-to-text": "turbo run dev --filter=@reza-heydari/speech-to-text",
+    "build:speech-to-text": "turbo run build --filter=@reza-heydari/speech-to-text",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
