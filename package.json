@@ -1,5 +1,5 @@
 {
-  "name": "instagram-toturials",
+  "name": "instagram-tutorials",
   "private": true,
   "scripts": {
     "build": "turbo build",
@@ -8,8 +8,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
+    "@reza-heydari/eslint-config": "*",
+    "@reza-heydari/typescript-config": "*",
     "prettier": "^3.1.1",
     "turbo": "latest"
   },
