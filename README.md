@@ -18,7 +18,10 @@ To get started with the Instagram Tutorials repository, follow these steps:
 
 1. Clone the repository to your local machine.
 2. run the scripts in the package.json base on the project you look for, "for example yarn dev:bite-sizer"
-OR
+
+### Or 
+
+
 2. Navigate to the project you're interested in.
 3. Follow the instructions in the README.md file to set up the project and run it locally.
 
