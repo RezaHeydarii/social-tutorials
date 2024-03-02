@@ -55,7 +55,8 @@ export const useSpeechToText = (props: UseSpeechToTextParams) => {
 
   useEffect(() => {
     recognition.current.onspeechend = () => {
-      onAbortListen();
+      recognition.current.stop();
+      toggleListening(false);
     };
   }, [onAbortListen]);
 

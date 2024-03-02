@@ -1,81 +1,33 @@
-# Turborepo starter
+# Instagram Tutorials Repository
 
-This is an official starter Turborepo.
+Welcome to the Instagram Tutorials repository! This monorepo contains a collection of mini projects that I teach through my Instagram posts and reels. Each project is designed to help you learn and master different concepts using React, TypeScript, Node.js, and TurboRepo.
 
-## Using this example
+## About TurboRepo
 
-Run the following command:
+TurboRepo is a tool for managing monorepos. It simplifies the development process by allowing you to work with multiple packages within a single repository. With TurboRepo, you can easily manage dependencies, share code between projects, and streamline your workflow.
 
-```sh
-npx create-turbo@latest
-```
+## Projects Included
 
-## What's inside?
+- **Project 1:** Speech to text using browser API
 
-This Turborepo includes the following packages/apps:
+Each project comes with detailed instructions and code snippets to guide you through the learning process.
 
-### Apps and Packages
+## Getting Started
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@reza-heydari/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@reza-heydari/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@reza-heydari/typescript-config`: `tsconfig.json`s used throughout the monorepo
+To get started with the Instagram Tutorials repository, follow these steps:
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+1. Clone the repository to your local machine.
+2. run the scripts in the package.json base on the project you look for, "for example yarn dev:bite-sizer"
+OR
+2. Navigate to the project you're interested in.
+3. Follow the instructions in the README.md file to set up the project and run it locally.
 
-### Utilities
+## Feedback
 
-This Turborepo has some additional tools already setup for you:
+Your feedback is essential to help us improve the Instagram Tutorials repository. If you have any suggestions, questions, or concerns, please don't hesitate to reach out. You can contact us through GitHub issues or reach me directly on Instagram.
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## Stay Connected
 
-### Build
+Stay updated with the latest tutorials and projects by following me on Instagram [@rezaheydari.developer](https://www.instagram.com/rezaheydari.developer/). Don't forget to like, share, and comment on the tutorials to let me know what you think!
 
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Happy coding! 🚀

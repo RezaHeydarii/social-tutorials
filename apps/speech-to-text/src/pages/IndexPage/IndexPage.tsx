@@ -6,17 +6,39 @@ import TextField from "@mui/material/TextField";
 import { useSpeechToText } from "../../hooks";
 import { useState } from "react";
 
+const colors = [
+  "aqua",
+  "azure",
+  "beige",
+  "bisque",
+  "black",
+  "blue",
+  "brown",
+  "chocolate",
+  "coral",
+  "red",
+];
+
 const IndexPage = () => {
   const [inputValue, setInputValue] = useState<string>("");
+  const [bg, setBg] = useState<string>("");
   const { isListening, toggleListen } = useSpeechToText({
     continuous: true,
     onResult: (res) => {
       const { resultIndex, results } = res;
-      setInputValue((v) => v + " " + results[resultIndex][0].transcript);
+      const currentResult = results[resultIndex][0].transcript;
+
+      colors.forEach((color) => {
+        if (currentResult.includes(color)) {
+          setBg(color);
+        }
+      });
+
+      setInputValue((v) => v + " " + currentResult);
     },
   });
   return (
-    <main className="flex pt-5 justify-center mx-auto max-w-[400px] px-2.5">
+    <main className="flex flex-col pt-5 justify-center mx-auto max-w-[400px] px-2.5">
       <TextField
         fullWidth
         label="Enter your text:"
@@ -30,13 +52,19 @@ const IndexPage = () => {
               <IconButton
                 onClick={() => toggleListen()}
                 color={isListening ? "primary" : "default"}
+                className="relative"
               >
                 {!isListening ? <KeyboardVoiceIcon /> : <MicOffIcon />}
+                {isListening && (
+                  <div className="w-full h-full bg-purple-600 absolute rounded-full animate-ping" />
+                )}
               </IconButton>
             </InputAdornment>
           ),
         }}
       />
+
+      <div style={{ background: bg }} className="w-full mt-10 h-28"></div>
     </main>
   );
 };
